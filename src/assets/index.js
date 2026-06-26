@@ -15,6 +15,11 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import python from "./tech/python.png";
+import aws from "./tech/aws.png";
+import postgresql from "./tech/postgresql.png";
+import fastapi from "./tech/fastapi.png";
+import aiTools from "./tech/ai.png";
 
 import cisco from "./company/cisco.svg";
 import colabo from "./company/colabo.png";
@@ -41,6 +46,11 @@ export {
   reactjs,
   tailwind,
   typescript,
+  python,
+  aws,
+  postgresql,
+  fastapi,
+  aiTools,
   cisco,
   colabo,
   ellipsis,

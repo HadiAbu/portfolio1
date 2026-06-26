@@ -10,6 +10,11 @@ import {
   nodejs,
   git,
   docker,
+  python,
+  aws,
+  postgresql,
+  fastapi,
+  aiTools,
   ellipsis,
   colabo,
   cisco,
@@ -59,8 +64,28 @@ const services = [
 
 const technologies = [
   {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "FastAPI",
+    icon: fastapi,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
+  },
+  {
+    name: "AWS",
+    icon: aws,
+  },
+  {
     name: "Docker",
     icon: docker,
+  },
+  {
+    name: "Claude Code",
+    icon: aiTools,
   },
   {
     name: "TypeScript",
