@@ -17,10 +17,6 @@ import {
   aiPhilosophy,
   mangaScrapper,
   issueTracker,
-  threejs,
-  python,
-  fastapi,
-  postgresql,
 } from "../assets";
 
 export const navLinks = [
@@ -63,18 +59,6 @@ const services = [
 
 const technologies = [
   {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: "FastAPI",
-    icon: fastapi,
-  },
-  {
-    name: "PostgreSQL",
-    icon: postgresql,
-  },
-  {
     name: "Docker",
     icon: docker,
   },
@@ -97,10 +81,6 @@ const technologies = [
   {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "Git",
