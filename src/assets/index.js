@@ -34,13 +34,10 @@ import polar from "./company/polar.jpg";
 // import carrent from "./carrent.png";
 // import jobit from "./jobit.png";
 // import tripguide from "./tripguide.png";
-import worldRanks from "./proj/world-ranks.png";
-import dynamicDash from "./proj/dynamic-dash.png";
 import shoppingCart from "./proj/shopping-cart.png";
 import puzzleMaker from "./proj/puzzle.png";
 import gyg from "./proj/gyg.png";
 import lifeismusic from "./proj/lifeismusic.png";
-import eventhub from "./proj/event-hub.png";
 import aiPhilosophy from "./proj/ai-philosophy.png";
 import mangaScrapper from "./proj/manga-scrapper.png";
 import issueTracker from "./proj/issue-tracker.jpg";
@@ -74,12 +71,9 @@ export {
   polar,
   starbucks,
   tesla,
-  worldRanks,
-  dynamicDash,
   shoppingCart,
   puzzleMaker,
   lifeismusic,
-  eventhub,
   gyg,
   aiPhilosophy,
   mangaScrapper,

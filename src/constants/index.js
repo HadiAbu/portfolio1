@@ -21,12 +21,9 @@ import {
   tesla,
   cisco,
   polar,
-  worldRanks,
-  dynamicDash,
   // shoppingCart,
   // puzzleMaker,
   lifeismusic,
-  eventhub,
   gyg,
   aiPhilosophy,
   mangaScrapper,
@@ -275,60 +272,6 @@ const projects = [
     source_code_link: "https://lifeismusic-hadi.netlify.app/",
   },
   {
-    name: "EventHub | Discover Events and Venues",
-    description:
-      "A fullstack event discovery web application built with NextJS, where users can explore events and venues based on their location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "nextjs",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "SSR",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "responsive",
-        color: "green-text-gradient",
-      },
-    ],
-    image: eventhub,
-    source_code_link: "https://event-hub-hadi.vercel.app/",
-  },
-  {
-    name: "Dynamic Dashboard",
-    description:
-      "Fully functional front-end project with all the important and most common features used in modern day web: Dashboard, Calendar, Charts, Color themes, Sidebar, Tables of data and more.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Syncfusion",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "ChartJS",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: dynamicDash,
-    source_code_link: "https://dynamic-dashboard.vercel.app/",
-  },
-  {
     name: "Green-Yellow Graph",
     description:
       "A demo app that builds a graph from a linked list and decides if two connected nodes never have the same color, and the graph is a connected graph.",
@@ -352,31 +295,6 @@ const projects = [
     ],
     image: gyg,
     source_code_link: "https://green-yellow-graph.vercel.app/",
-  },
-  {
-    name: "World Ranks",
-    description:
-      "A fullstack project built in React + NextJS, displaying information like population, area, gini, capital, spoken languages,...",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nextjs",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "SSR",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "responsive",
-        color: "green-text-gradient",
-      },
-    ],
-    image: worldRanks,
-    source_code_link: "https://world-ranks-red.vercel.app/",
   },
 ];
 const socialLinks = [
