@@ -1,11 +1,12 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mbdvojwp';
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,6 +17,7 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState({ type: '', message: '' });
 
   const handleChange = (e) => {
     const { target } = e;
@@ -27,41 +29,29 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setStatus({ type: '', message: '' });
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: 'Hadi Portfolio',
-          from_email: form.email,
-          to_email: 'hadiabuhamed@gmail.com',
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert('Thank you. I will get back to you as soon as possible.');
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        body: new FormData(formRef.current),
+        headers: { Accept: 'application/json' },
+      });
 
-          setForm({
-            name: '',
-            email: '',
-            message: '',
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert('Ahh, something went wrong. Please try again.');
-        }
-      );
+      if (res.ok) {
+        setForm({ name: '', email: '', message: '' });
+        setStatus({ type: 'success', message: "Thank you! I'll get back to you as soon as possible." });
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch {
+      setStatus({ type: 'error', message: 'Something went wrong. Please try again or email me directly.' });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -116,10 +106,17 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+            disabled={loading}
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary disabled:opacity-60 disabled:cursor-not-allowed"
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
+
+          {status.message && (
+            <p className={`text-sm mt-2 ${status.type === 'success' ? 'text-green-400' : 'text-red-400'}`}>
+              {status.message}
+            </p>
+          )}
         </form>
       </motion.div>
 
