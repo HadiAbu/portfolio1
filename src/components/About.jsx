@@ -46,7 +46,7 @@ const About = () => {
         I'm a Fullstack AI Engineer with a background that spans automation
         engineering at Cisco, frontend development at Colabo, Polar, and
         Ellipsis Drive, and now building end-to-end AI-powered applications.
-        I work across the full stack — React and TypeScript on the frontend,
+        I work across the full stack: React and TypeScript on the frontend,
         Python and FastAPI on the backend, and LLM integrations, vector search,
         and cloud deployments (Docker, AWS) to ship intelligent products from
         idea to production.

@@ -193,7 +193,7 @@ const projects = [
   {
     name: "AI Philosophy",
     description:
-      "Interactive platform teaching how AI works — 13 modules covering neural networks, transformers, RAG, embeddings, and prompt engineering, with live TensorFlow.js simulations. Deployed on AWS EC2 with GitHub Actions CI/CD.",
+      "Interactive platform teaching how AI works through 13 modules covering neural networks, transformers, RAG, embeddings, and prompt engineering, with live TensorFlow.js simulations. Deployed on AWS EC2 with GitHub Actions CI/CD.",
     tags: [
       { name: "React 19 + TypeScript", color: "blue-text-gradient" },
       { name: "FastAPI + Python", color: "green-text-gradient" },
@@ -219,7 +219,7 @@ const projects = [
   {
     name: "Claude Issue Tracker",
     description:
-      "Linear-inspired fullstack issue tracker with a kanban board, dashboard charts, JWT auth, and commenting system. Built end-to-end with Claude Code — using AI to run code reviews, create PRs, and fix issues autonomously.",
+      "Linear-inspired fullstack issue tracker with a kanban board, dashboard charts, JWT auth, and commenting system. Built end-to-end with Claude Code, using AI to run code reviews, create PRs, and fix issues autonomously.",
     tags: [
       { name: "FastAPI + SQLAlchemy", color: "blue-text-gradient" },
       { name: "React 18 + TanStack Query", color: "green-text-gradient" },
