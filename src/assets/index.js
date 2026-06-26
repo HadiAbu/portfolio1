@@ -25,6 +25,7 @@ import cisco from "./company/cisco.svg";
 import colabo from "./company/colabo.png";
 import ellipsis from "./company/ellipsis.png";
 import polar from "./company/polar.jpg";
+import aiSimpleflow from "./company/ai-simpleflow.png";
 
 import aiPhilosophy from "./proj/ai-philosophy.png";
 import mangaScrapper from "./proj/manga-scrapper.png";
@@ -55,6 +56,7 @@ export {
   colabo,
   ellipsis,
   polar,
+  aiSimpleflow,
   aiPhilosophy,
   mangaScrapper,
   issueTracker,

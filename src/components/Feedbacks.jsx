@@ -6,40 +6,28 @@ import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 import { testimonials } from '../constants';
 
-const FeedbackCard = ({
-  index,
-  testimonial,
-  name,
-  designation,
-  company,
-  // image,
-}) => (
+const FeedbackCard = ({ index, testimonial, name, designation, company }) => (
   <motion.div
     variants={fadeIn('', 'spring', index * 0.5, 0.75)}
-    className="bg-quadrary p-10 rounded-3xl xs:w-[320px] w-full"
+    className="bg-quadrary p-8 rounded-3xl xs:w-[320px] w-full flex flex-col"
   >
-    <p className="text-white font-black text-[48px]">"</p>
+    <p className="text-white font-black text-[48px] leading-none mb-2">"</p>
 
-    <div className="mt-1">
-      <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
+    <p className="text-white tracking-wide text-[16px] leading-[1.7] italic flex-1">
+      {testimonial}
+    </p>
 
-      <div className="mt-7 flex justify-between items-center gap-1">
-        <div className="flex-1 flex flex-col">
-          <p className="text-white font-medium text-[16px]">
-            <span className="blue-text-gradient">@</span> {name}
+    <div className="mt-8 flex items-center gap-3">
+      <div className="w-1 h-10 bg-gradient-to-b from-[#915EFF] to-[#a78bfa] rounded-full" />
+      <div>
+        <p className="text-white font-semibold text-[15px]">{name}</p>
+        {(designation || company) && (
+          <p className="mt-0.5 text-secondary text-[12px]">
+            {designation}
+            {designation && company ? ', ' : ''}
+            {company}
           </p>
-          <p className="mt-1 text-secondary text-[12px]">
-            {`${designation != null ? designation : ''} ${
-              company != null ? 'of ' + company : ''
-            }`}
-          </p>
-        </div>
-
-        {/* <img
-          src={image}
-          alt={`feedback_by-${name}`}
-          className="w-10 h-10 rounded-full object-cover"
-        /> */}
+        )}
       </div>
     </div>
   </motion.div>
