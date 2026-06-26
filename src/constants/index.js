@@ -28,6 +28,9 @@ import {
   lifeismusic,
   eventhub,
   gyg,
+  aiPhilosophy,
+  mangaScrapper,
+  issueTracker,
   threejs,
 } from "../assets";
 
@@ -56,19 +59,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Fullstack AI Engineer",
     icon: web,
   },
-  // {
-  //   title: "React Native Developer",
-  //   icon: mobile,
-  // },
   {
-    title: "Backend Developer",
+    title: "Python & FastAPI",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "LLM & AI Applications",
     icon: creator,
   },
 ];
@@ -212,6 +211,45 @@ const testimonials = [
 
 const projects = [
   {
+    name: "AI Philosophy",
+    description:
+      "Interactive platform teaching how AI works — 13 modules covering neural networks, transformers, RAG, embeddings, and prompt engineering, with live TensorFlow.js simulations. Deployed on AWS EC2 with GitHub Actions CI/CD.",
+    tags: [
+      { name: "React 19 + TypeScript", color: "blue-text-gradient" },
+      { name: "FastAPI + Python", color: "green-text-gradient" },
+      { name: "TensorFlow.js + D3", color: "pink-text-gradient" },
+      { name: "AWS EC2 + Docker", color: "orange-text-gradient" },
+    ],
+    image: aiPhilosophy,
+    source_code_link: "https://aiphilo.pathofbalance.io",
+  },
+  {
+    name: "Manga Scrapper",
+    description:
+      "Full-stack manga discovery app that scrapes metadata from the Jikan API, indexes it into OpenSearch for fast full-text search, and serves it via FastAPI with Keycloak OIDC authentication and daily automated scraping.",
+    tags: [
+      { name: "FastAPI + Python", color: "blue-text-gradient" },
+      { name: "OpenSearch", color: "green-text-gradient" },
+      { name: "Keycloak OIDC", color: "pink-text-gradient" },
+      { name: "PostgreSQL + Docker", color: "orange-text-gradient" },
+    ],
+    image: mangaScrapper,
+    source_code_link: "https://github.com/HadiAbu/Manga-Scrapper",
+  },
+  {
+    name: "Claude Issue Tracker",
+    description:
+      "Linear-inspired fullstack issue tracker with a kanban board, dashboard charts, JWT auth, and commenting system. Built end-to-end with Claude Code — using AI to run code reviews, create PRs, and fix issues autonomously.",
+    tags: [
+      { name: "FastAPI + SQLAlchemy", color: "blue-text-gradient" },
+      { name: "React 18 + TanStack Query", color: "green-text-gradient" },
+      { name: "PostgreSQL + Docker", color: "pink-text-gradient" },
+      { name: "Claude Code (AI-assisted)", color: "orange-text-gradient" },
+    ],
+    image: issueTracker,
+    source_code_link: "https://github.com/HadiAbu/claude-issue-tracker",
+  },
+  {
     name: "Life Is Music | Music Discovery App",
     description:
       "Music Discovery App, with Top Charts, Top Artists, Music around you and Lyrics finder",
@@ -268,7 +306,7 @@ const projects = [
   {
     name: "Dynamic Dashboard",
     description:
-      "Fully functional front-end project with the all the important and most common used features used in modren day web; Dashboard, Calendar, Charts, Colro themes, Siderbar, Tables of data and more..",
+      "Fully functional front-end project with all the important and most common features used in modern day web: Dashboard, Calendar, Charts, Color themes, Sidebar, Tables of data and more.",
     tags: [
       {
         name: "react",
@@ -343,7 +381,7 @@ const projects = [
 ];
 const socialLinks = [
   { name: "LinkedIn", link: "https://linkedin.com/in/hadiabu/" },
-  { name: "GitHub", link: "https://github.com/HadiAbu/ " },
+  { name: "GitHub", link: "https://github.com/HadiAbu" },
   {
     name: "StackOverflow",
     link: "https://stackoverflow.com/users/2374685/hadi-abu",

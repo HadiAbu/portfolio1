@@ -41,6 +41,9 @@ import puzzleMaker from "./proj/puzzle.png";
 import gyg from "./proj/gyg.png";
 import lifeismusic from "./proj/lifeismusic.png";
 import eventhub from "./proj/event-hub.png";
+import aiPhilosophy from "./proj/ai-philosophy.png";
+import mangaScrapper from "./proj/manga-scrapper.png";
+import issueTracker from "./proj/issue-tracker.jpg";
 
 export {
   logo,
@@ -78,5 +81,8 @@ export {
   lifeismusic,
   eventhub,
   gyg,
+  aiPhilosophy,
+  mangaScrapper,
+  issueTracker,
   profile,
 };
