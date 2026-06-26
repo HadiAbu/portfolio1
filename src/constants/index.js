@@ -5,30 +5,22 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
-  figma,
   docker,
   ellipsis,
   colabo,
-  starbucks,
-  tesla,
   cisco,
   polar,
-  // shoppingCart,
-  // puzzleMaker,
-  lifeismusic,
-  gyg,
   aiPhilosophy,
   mangaScrapper,
   issueTracker,
   threejs,
+  python,
+  fastapi,
+  postgresql,
 } from "../assets";
 
 export const navLinks = [
@@ -71,16 +63,20 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Python",
+    icon: python,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "FastAPI",
+    icon: fastapi,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "PostgreSQL",
+    icon: postgresql,
+  },
+  {
+    name: "Docker",
+    icon: docker,
   },
   {
     name: "TypeScript",
@@ -91,37 +87,25 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
     name: "Three JS",
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
 ];
 
 const experiences = [
@@ -200,9 +184,8 @@ const testimonials = [
     testimonial:
       "Seeking excellence in his work with great respect for his adoptive company. Facing every challenge presented in his way with great enthusiasm, and indeed with his determination and will he succeeds at tackling the obstacles.",
     name: "Adi Ghoumaed",
-    // designation: "Senior software engineer",
-    // company: "Cisco Systems LTD.",
-    // image: "https://randomuser.me/api/portraits/men/6.jpg",
+    designation: "Senior Software Engineer",
+    company: "Cisco Systems",
   },
 ];
 
@@ -245,56 +228,6 @@ const projects = [
     ],
     image: issueTracker,
     source_code_link: "https://github.com/HadiAbu/claude-issue-tracker",
-  },
-  {
-    name: "Life Is Music | Music Discovery App",
-    description:
-      "Music Discovery App, with Top Charts, Top Artists, Music around you and Lyrics finder",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "RapidApi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Redux",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: lifeismusic,
-    source_code_link: "https://lifeismusic-hadi.netlify.app/",
-  },
-  {
-    name: "Green-Yellow Graph",
-    description:
-      "A demo app that builds a graph from a linked list and decides if two connected nodes never have the same color, and the graph is a connected graph.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MaterialUI",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "Graphs and algorithms",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: gyg,
-    source_code_link: "https://green-yellow-graph.vercel.app/",
   },
 ];
 const socialLinks = [
